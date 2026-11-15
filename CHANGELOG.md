@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.1] - 2026-11-15
+### Changed — published from the release workflow
+- No code change. 2.0.0 was published from a maintainer session and carries no provenance attestation; 2.0.1 is the first version published by the `overturo/sdk` release workflow through the registry's trusted publisher, with the attestation that names the workflow and the tag it built from. The two versions install the same code.
+
 ## [2.0.0] - 2026-10-26
 ### Changed — public names, before the first registry publish
 - The audit-record pointer is `record_id` everywhere: the receipt claim, `AuthorizeAllowResponse`, `AuthorizeEscalateResponse`, `OverturoDecision`, the audit-trail entry. `chronicle_id` is gone from the wire and the types; nothing is dual-emitted (the registries have never seen this package).
