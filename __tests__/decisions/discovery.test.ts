@@ -46,7 +46,7 @@ describe("discoverFlowDisclosures", () => {
 
     expect(result.schema).toBe("overturo-disclosure/1")
     expect(result.flow.kind).toBe("consent")
-    expect(result.application.primary_color).toBe("#0B5FFF")
+    expect(result.application.primary_color).toBe("#0b5fff")
     expect(result.expiry.consent_duration_days).toBe
     const purpose = result.purposes.find((p) => p.name === "care_reminders")
     expect(purpose?.mechanism).toBe("opt_out")

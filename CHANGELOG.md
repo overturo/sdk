@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.0] - 2026-11-21
+### Added
+- `FlowDisclosures.languages` (`decisions.discover()`): the languages a flow can be shown in, each named in itself (`{tag, name}`). A requested locale selects among them, and a flow is never shown in another.
+### Changed
+- Vendored corpus refreshed: the flow disclosures carry `languages`; the recordings follow the platform's hosted consent forms.
+
 ## [2.0.1] - 2026-11-15
 ### Changed — published from the release workflow
 - No code change. 2.0.0 was published from a maintainer session and carries no provenance attestation; 2.0.1 is the first version published by the `overturo/sdk` release workflow through the registry's trusted publisher, with the attestation that names the workflow and the tag it built from. The two versions install the same code.

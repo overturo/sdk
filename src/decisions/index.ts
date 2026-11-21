@@ -67,6 +67,8 @@ export interface FlowDisclosures {
   expiry: { consent_duration_days: number | null }
   locale: { requested: "params" | "header" | "default"; resolved: string; fallback: "en" }
   revision: string
+  /** The languages the flow can be shown in, each named in itself; a requested locale selects among them. */
+  languages: Array<{ tag: string; name: string }>
 }
 
 export interface DiscoverFlowOptions {
